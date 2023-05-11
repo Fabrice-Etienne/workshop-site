@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="./header.css">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Goolge fonts poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;900&family=Tilt+Warp&display=swap" rel="stylesheet">
+        <!-- Police helvetica -->
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+        <title>Media Crack</title>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/logoMedia.png" alt="logo">
+            </a>
+            <h1>MediaCrack</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="quizz.html">Quiz</a></li>
+                <li><a href="./form.html">SIGNALER</a></li>
+                <li><a href="./news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+<main id="form-page">
+    <div class="contactez-nous">
+        <h1>Suspicion de fraude ?</h1>
+        <p>Vous pensez être victime d'un pirate ou d'une cyber-attaque ? Signalez-le! </p>
+        <form>
+            <div>
+                <label>Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+                <label>Votre e-mail</label>
+                <input type="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label>Quelle est la raison de votre venue</label>
+                <select name="sujet" required>
+                    <option value="" disabled selected hidden>Choisir</option>
+                    <option value="probleme-compte">Je suis victime</option>
+                    <option value="question-produit">Un proche est victime</option>
+                    <option value="suivi-commande">Je veux me renseigner</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label>Sur quelle plateformes ?</label>
+                <select name="sujet" required>
+                    <option value="" disabled selected hidden>Nom de la plateforme</option>
+                    <option value="probleme-compte">Mail</option>
+                    <option value="question-produit">Réseaux sociaux</option>
+                    <option value="suivi-commande">SMS</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Par quels moyens ?</label>
+                <textarea id="message" name="message" rows="10"
+                          placeholder="Bonjour, je vous contacte car je me suis fait voler mes codes de cartes bleues..."
+                          required></textarea>
+            </div>
+            <div class="last-btn">
+                <button type="submit" id="formButton">ENVOYER</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div>
+        <h3>À PROPOS</h3>
+        <a href="#">Qui sommes-nous ?</a>
+        <a href="#">Kit de communication</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+    </div>
+    <div>
+        <h3>DIVERS</h3>
+        <a href="#">Plan du site</a>
+        <a href="#">Presse</a>
+        <a href="#">Marchés publics</a>
+        <a href="#">Label ExpertCyber</a>
+    </div>
+    <div>
+        <h3>NOUS SUIVRE</h3>
+        <div class="social-media">
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+        </div>
+    </div>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>

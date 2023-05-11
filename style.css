@@ -1,0 +1,309 @@
+* {
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+    text-decoration: none ;
+    list-style-type: none ;
+}
+
+body {
+    background-color: var(--color-white--) ;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw ;
+    color: #030303;
+    overflow-x: hidden ;
+}
+body h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+:root {
+    /* Colors */
+    --color-red-- : #E52521 ; 
+    --color-light-blue-- : #3C658F ;
+    --color-dark-blue-- : #1F2E54 ;
+    --color-white-- : #EEEEEE ;
+}
+
+body p {
+    line-height: 1.5 ;
+}
+body a {
+    color: var(--color-light-blue--);
+}
+body button {
+    cursor: pointer ;
+}
+
+    /* Header */
+header {
+    position: fixed ;
+    z-index: 5 ;
+    width: 100% ;
+    padding: 16px 6% ;
+    background-color: white ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        /* Container part */
+
+#container .banner {
+    background-image: url(./images/mains-travaillant-superposition-graphique-reseau-appareils-numeriques.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 100% ;
+    height: 400px;
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+}
+#container .banner h1{
+    color: var(--color-white--) ;
+    text-shadow: 5px 5px 10px black ;
+    font-size: 3rem ;
+    padding: 0px 6% ;
+}
+#container .item-1 {
+    padding: 10px 6% ;
+    background-color: var(--color-dark-blue--) ;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center ;
+}
+#container .item-1 a {
+    color: var(--color-white--);
+}
+#container .item-1 a:last-child {
+    padding: 2px 8px ;
+    background-color: var(--color-white--) ;
+    color: var(--color-dark-blue--) ;
+    border: 6px;
+}
+
+        /* Section 0 */
+.section-0 {
+    padding: 24px 6% ;
+}
+.section-0 h2{
+    text-align: center ;
+    margin: 24px  0px 48px ;
+    font-weight: bold ;
+    font-size: 2rem;
+}
+
+        /* Section 1 */
+.section-1 {
+    padding: 0px 6% ;
+}
+.section-1 .main-links {
+    margin: 8px 0px 32px ;
+    background-color: rgba(128, 128, 128,0.1) ;
+    padding: 16px 0px;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center ;
+}
+.section-1 .main-links a{
+    color: var(--color-light-blue--) ;
+    font-weight: 500;
+}
+.section-1 .right-lef{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 16px ;
+}
+.section-1 .right-lef > div {
+    background-color: white ;
+}
+.section-1 .right-lef img {
+    width: 100% ;
+    height: 304px;
+    object-fit: cover ;
+}
+.section-1 .right-lef h2{
+    text-align: center ;
+    padding: 8px 0px 16px ;
+}
+.section-1 .main-bottom-links {
+    padding: 16px 0px 24px ;
+    display: flex ;
+    justify-content: center ;
+}
+
+        /* Section 2 */
+.section-2 {
+    margin-top: 32px ;
+    padding: 0px 6% ;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 16px ;
+}
+.section-2 > div {
+    background-color: white ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    padding: 16px ;
+}
+.section-2 .icons {
+    background-color: var(--color-white--) ;
+    padding: 24px ;
+    border-radius: 1000px ;
+    margin-bottom: 16px ;
+}
+.section-2 .icons i{
+    color: var(--color-light-blue--) ;
+    font-size: 4rem ;
+}
+.section-2 h3 {
+    color: var(--color-light-blue--) ;
+    font-size: 1.4rem ;
+    margin-bottom: 16px ;
+}
+.section-2 button {
+    margin-top: 32px ;
+    border: 2px solid var(--color-light-blue--) ;
+    background-color: transparent ;
+    padding: 8px 16px ;
+    border-radius: 1000px ;
+}
+.section-2 button a {
+    color: var(--color-light-blue--) ; 
+}
+
+        /* Section 3 */
+.section-3 {
+    margin-top: 32px ;
+    padding: 0px 6% ;
+    position: relative;
+
+}
+.section-3 h1 {
+    font-size: 2.6rem ;
+    margin-bottom: 24px ;
+}
+.section-3 h1 span {
+    color: var(--color-light-blue--) ;
+}
+.section-3 .sect-3-right-left {
+    display: grid ;
+    grid-template-columns: repeat(2,1fr) ;
+}
+.section-3 .left-section-3 img {
+    width: 100% ;
+    height: 320px ;
+    object-fit: cover ;
+}
+.section-3 .right-section-3 {
+    background-color: white ;
+    padding: 24px ;
+    transform: translate(-72px,56px);
+}
+.section-3 .right-section-3 h2 {
+    margin-bottom: 32px ;
+    font-weight: bold ;
+    font-size: 2rem;
+}
+.section-3 button {
+    margin-top: auto;
+    display: inline-block;
+    color: var(--color-light-blue--) ;
+    border: 2px solid var(--color-light-blue--) ;
+    background-color: transparent ;
+    padding: 8px 16px ;
+    border-radius: 1000px ;
+}
+.section-3 .btn-section-3 {
+    display: flex ;
+    justify-content: center ;
+    height: 130px;
+}
+
+        /* Section 4 */
+.section-4 {
+    margin-top: 80px ;
+    padding: 0px 6% 56px;
+    background-color: white;
+}
+.section-4 h1 {
+    font-size: 2.6rem ;
+    padding: 1rem 0px;
+    margin-top: 24px;
+}
+.section-4 .main-links {
+    margin: 8px 0px 32px ;
+    background-color: rgba(128, 128, 128,0.1) ;
+    padding: 16px 0px;
+    padding: 10px 0px ;
+}
+.section-4  .main-links ul {
+    display: flex ;
+    justify-content: space-around ;
+}
+
+.section-4 .main-links a {
+    color: var(--color-light-blue--) ;
+    font-weight: 500 ;
+}
+.section-4 .collect {
+    display: grid ;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 16px ;
+}
+.section-4 .collect img {
+    width: 100% ;
+    height: 256px ;
+    object-fit: cover ;
+}
+.section-4 .collect h3 {
+    margin: 16px 0px ;
+}
+.section-4 .btn-section-4 {
+    height: 56px;
+    display: flex ;
+    justify-content: center ;
+} 
+.section-4 button{
+    margin-top: auto ;
+    color: var(--color-light-blue--) ;
+    border: 2px solid var(--color-light-blue--) ;
+    background-color: transparent ;
+    padding: 8px 16px ;
+    border-radius: 1000px ;
+} 
+
+        /* Footer */
+footer {
+    border-top: 1px solid var(--color-dark-blue--) ;
+    padding: 24px 6% ;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 16px ;
+}
+footer > div {
+    display: flex ;
+    flex-direction: column ;
+}
+footer div a:not(:last-child){
+    display: flex ;
+    flex-direction: column ;
+}
+footer div h3 {
+    margin-bottom: 16px ;
+}
+footer div a {
+    line-height: 2 ;
+}
+footer .social-media span {
+    width: 32px ;
+    height: 32px ;
+    border-radius: 1000px ;
+    margin-right: 24px ;
+
+}
+footer .social-media span i {
+    font-size: 2rem ;
+}
